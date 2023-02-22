@@ -44,5 +44,3 @@ RSpec.describe DiaryEntry do
     end 
   end
 end 
-
-# can read 20 words a minute and you have 15 minutes to read it.
