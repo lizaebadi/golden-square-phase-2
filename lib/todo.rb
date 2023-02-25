@@ -1,4 +1,4 @@
-class Todo
+class Todo1
   def initialize 
   @array_tasklist = []
   end 

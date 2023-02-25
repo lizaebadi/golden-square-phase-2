@@ -2,7 +2,7 @@ require 'todo'
 
 RSpec.describe 'todo class' do 
   it "returns the full list of tasks" do 
-    todo = Todo.new
+    todo = Todo1.new
     todo.list("Buy apples")
     todo.list("Read book")
     todo.list("Clean room")
@@ -11,7 +11,7 @@ RSpec.describe 'todo class' do
 
   context "when some tasks are completed" do 
     it "returns the remaining tasks" do 
-      todo = Todo.new
+      todo = Todo1.new
       todo.list("Buy apples")
       todo.list("Read book")
       todo.list("Clean room")
@@ -23,7 +23,7 @@ RSpec.describe 'todo class' do
 
   context "when a task is marked complete that wasn't on the original list" do
     it "returns an error" do 
-      todo = Todo.new
+      todo = Todo1.new
       todo.list("Buy apples")
       todo.list("Read book")
       todo.list("Clean room")
