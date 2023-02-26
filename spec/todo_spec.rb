@@ -1,5 +1,6 @@
 require 'todo'
 
+<<<<<<< HEAD
 RSpec.describe 'todo class' do 
   it "returns the full list of tasks" do 
     todo = Todo1.new
@@ -31,3 +32,17 @@ RSpec.describe 'todo class' do
     end 
   end
 end 
+=======
+RSpec.describe Todo do
+  it 'initializes' do
+    todo = Todo.new
+  end
+
+  it 'returns list of tasks' do
+    todo = Todo.new
+    todo.add("task1")
+    todo.add("task2")
+    expect(todo.all_tasks).to eq ["task1", "task2"]
+  end
+end
+>>>>>>> e6e26e0629526546b0f5dddfe3e4b27058ebb702

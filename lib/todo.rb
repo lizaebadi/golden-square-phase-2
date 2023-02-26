@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 class Todo1
   def initialize 
   @array_tasklist = []
@@ -24,4 +25,18 @@ class Todo1
   def list_remaining_tasks 
     return @array_tasklist.join(", ")
   end 
+=======
+class Todo
+  def initialize
+    @tasks = []
+  end
+  
+  def add(task)
+    @tasks << task
+  end
+
+  def all_tasks
+    return @tasks
+  end
+>>>>>>> e6e26e0629526546b0f5dddfe3e4b27058ebb702
 end

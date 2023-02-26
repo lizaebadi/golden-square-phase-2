@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # redone with Kay's demonstration 
 
 class DiaryEntry
@@ -57,3 +58,20 @@ class DiaryEntry
     return @contents.split(" ")
   end 
 end
+=======
+class DiaryEntry
+  def initialize(name, number, diary_entry)
+    @name = name
+    @number = number
+    @diary_entry = diary_entry
+  end
+
+  def count_words
+    return @diary_entry.split(" ").length
+  end 
+
+  def contacts
+    return "#{@number}: #{@name}"
+  end 
+end
+>>>>>>> e6e26e0629526546b0f5dddfe3e4b27058ebb702

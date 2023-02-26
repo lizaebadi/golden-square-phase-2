@@ -1,5 +1,6 @@
 require 'diary_entry'
 
+<<<<<<< HEAD
 RSpec.describe DiaryEntry do 
   it "returns the text of the diary you can read given an amount of time" do 
     diaryentry = DiaryEntry.new("title", "contents")
@@ -44,3 +45,20 @@ RSpec.describe DiaryEntry do
     end 
   end
 end 
+=======
+RSpec.describe DiaryEntry do
+  it 'initializes' do
+    diaryentry1 = DiaryEntry.new("name1", "number1", "diary_entry1 blah blah blah")
+  end
+
+  it 'counts words in the entry' do 
+    diaryentry1 = DiaryEntry.new("name1", "number1", "diary_entry1 blah blah blah")
+    expect(diaryentry1.count_words).to eq 4
+  end
+
+  it 'returns contact details for the entry' do 
+    diaryentry1 = DiaryEntry.new("name1", "number1", "diary_entry1 blah blah blah")
+    expect(diaryentry1.contacts).to eq "number1: name1"
+  end
+end
+>>>>>>> e6e26e0629526546b0f5dddfe3e4b27058ebb702
